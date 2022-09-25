@@ -5,6 +5,7 @@ services:
                 build: .
                 ports:
                         - "8086:8080"
+
                 volumes:
                         - persistent_volume:/app/volumes
 volumes:
@@ -14,3 +15,4 @@ volumes:
       o: bind
       type: none
       device: /home/ubuntu/flask_portfolio/volumes
+      tty: true
