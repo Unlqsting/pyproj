@@ -4,7 +4,7 @@ services:
                 image: pyproj_v1
                 build: .
                 ports:
-                        - "8089:8080"
+                        - "8086:8080"
 
                 volumes:
                         - persistent_volume:/app/volumes
